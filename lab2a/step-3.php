@@ -1,10 +1,12 @@
 <?php
 require "helpers/helper-functions.php";
+
 session_start();
 
 $_SESSION['program'] = $_POST['program'];
 $_SESSION['address'] = $_POST['address'];
 ?>
+
 <html>
 <head>
     <meta charset="utf-8">
