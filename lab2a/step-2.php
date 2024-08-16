@@ -37,12 +37,10 @@ $_SESSION['sex'] = $_POST['sex'];
 
             <label>Complete Address</label>
             <textarea name="address" rows="3" required></textarea>
-
             <input type="hidden" name="fullname" value="<?php echo $_SESSION['fullname']; ?>">
             <input type="hidden" name="birthdate" value="<?php echo $_SESSION['birthdate']; ?>">
             <input type="hidden" name="contact_number" value="<?php echo $_SESSION['contact_number']; ?>">
             <input type="hidden" name="sex" value="<?php echo $_SESSION['sex']; ?>">
-
             <button type="submit">Next</button>
           </fieldset>
         </form>
