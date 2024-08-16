@@ -1,11 +1,14 @@
 <?php
+
 require "helpers/helper-functions.php";
+
 session_start();
 
 $_SESSION['fullname'] = $_POST['fullname'];
 $_SESSION['birthdate'] = $_POST['birthdate'];
 $_SESSION['contact_number'] = $_POST['contact_number'];
 $_SESSION['sex'] = $_POST['sex'];
+
 ?>
 <html>
 <head>
