@@ -30,7 +30,7 @@ $_SESSION['sex'] = $sex;
 $_SESSION['program'] = $program;
 $_SESSION['address'] = $address;
 $_SESSION['email'] = $email;
-$_password['password'] = $password;
+$_SESSION['password'] = $password;
 $_SESSION['age'] = $age;
 
 $csvFilePath = '../lab2b/registration.csv';
