@@ -33,14 +33,12 @@ $_SESSION['address'] = $_POST['address'];
               <input type="checkbox" name="agree" required>
               I agree to the terms and conditions...
             </label>
-
             <input type="hidden" name="fullname" value="<?php echo $_SESSION['fullname']; ?>">
             <input type="hidden" name="birthdate" value="<?php echo $_SESSION['birthdate']; ?>">
             <input type="hidden" name="contact_number" value="<?php echo $_SESSION['contact_number']; ?>">
             <input type="hidden" name="sex" value="<?php echo $_SESSION['sex']; ?>">
             <input type="hidden" name="program" value="<?php echo $_SESSION['program']; ?>">
             <input type="hidden" name="address" value="<?php echo $_SESSION['address']; ?>">
-
             <button type="submit" class="p-button--positive">Finish</button>
           </fieldset>
         </form>
