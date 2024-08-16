@@ -9,7 +9,7 @@ $sex = $_POST['sex'];
 $program = $_POST['program'];
 $address = $_POST['address'];
 $email = $_POST['email'];
-$password = $_POST['password'];
+$password = sha1($_POST['password']);
 $agree = isset($_POST['agree']) ? 'Yes' : 'No';
 
 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
@@ -30,6 +30,7 @@ $_SESSION['sex'] = $sex;
 $_SESSION['program'] = $program;
 $_SESSION['address'] = $address;
 $_SESSION['email'] = $email;
+$password['password'] = $password;
 $_SESSION['age'] = $age;
 
 $csvFilePath = '../lab2b/registration.csv';
