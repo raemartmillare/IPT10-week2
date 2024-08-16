@@ -29,7 +29,7 @@ function get_customers_data($filter_letter) {
     $end_time = microtime(true); 
     $execution_time = $end_time - $start_time; 
 
-    echo "<p>Execution Time: {$execution_time} seconds</p>";
+    echo "<p>Time: {$execution_time} seconds</p>";
 
     return [
         'headers' => $headers,
