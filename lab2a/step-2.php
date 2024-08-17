@@ -26,7 +26,13 @@ $_SESSION['sex'] = $_POST['sex'];
         <h1>Registration (Step 2/3)</h1>
       </div>
       <div class="p-section--shallow">
+          
         <form action="step-3.php" method="POST">
+            <input type="hidden" name="fullname" value="<?php echo $_SESSION['fullname']; ?>">
+            <input type="hidden" name="birthdate" value="<?php echo $_SESSION['birthdate']; ?>">
+            <input type="hidden" name="contact_number" value="<?php echo $_SESSION['contact_number']; ?>">
+            <input type="hidden" name="sex" value="<?php echo $_SESSION['sex']; ?>">
+            
           <fieldset>
             <label>Program</label>
             <select name="program" required>
@@ -40,11 +46,6 @@ $_SESSION['sex'] = $_POST['sex'];
 
             <label>Complete Address</label>
             <textarea name="address" rows="3" required></textarea>
-            <input type="hidden" name="fullname" value="<?php echo $_SESSION['fullname']; ?>">
-            <input type="hidden" name="birthdate" value="<?php echo $_SESSION['birthdate']; ?>">
-            <input type="hidden" name="contact_number" value="<?php echo $_SESSION['contact_number']; ?>">
-            <input type="hidden" name="sex" value="<?php echo $_SESSION['sex']; ?>">
-            <button type="submit">Next</button>
           </fieldset>
         </form>
       </div>
