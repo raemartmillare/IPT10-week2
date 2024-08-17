@@ -30,17 +30,10 @@ if (empty($data)) {
     <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-4.15.0.min.css" />
     <style>
         table {
-            width: 100%;
+            width: 200%;
             border-collapse: collapse;
         }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 200px;
-            text-align: left;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
+      
     </style>
 </head>
 <body>
